@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Page</title>
+    <style>
+        /* Reset and basic settings */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000; /* Set background to black */
+            color: #fff; /* Set text color to white for better readability */
+        }
+
+        /* Flex container for centering content */
+        .container {
+            text-align: center;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Style for the image */
+        .centered-image {
+            max-width: 50%; /* Limiting image width */
+            height: auto;
+            margin: 0 auto; /* Additional centering for image */
+            box-shadow: 0 4px 8px rgba(255,255,255,0.1); /* subtle white shadow */
+            border-radius: 8px; /* rounded corners */
+        }
+
+        /* Container for buttons */
+        .button-container {
+            margin-top: 20px;
+        }
+
+        /* Common button styling */
+        .button {
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth transition */
+            box-shadow: 0 2px 5px rgba(255,255,255,0.15);
+        }
+
+        /* Button hover effect */
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design: Adjusts layout for smaller screens */
+        @media (max-width: 768px) {
+            .centered-image {
+                max-width: 90%;
+            }
+
+            .button {
+                padding: 8px 16px; /* Slightly smaller padding */
+                font-size: 0.9em; /* Smaller font size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="your-image.jpg" alt="Descriptive Image Text" class="centered-image">
+
+        <div class="button-container">
+            <a href="https://twitter.com/yourusername" class="button">Twitter</a>
+            <a href="https://telegram.me/yourusername" class="button">Telegram</a>
+            <a href="https://etherscan.io/address/yourcontractaddress" class="button">Contract Address</a>
+        </div>
+    </div>
+</body>
+</html>
