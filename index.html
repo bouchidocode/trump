@@ -10,28 +10,28 @@
             height: 100%;
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #000; /* Set background to black */
-            color: #fff; /* Set text color to white for better readability */
-        }
-
-        /* Flex container for centering content */
-        .container {
-            text-align: center;
-            position: relative;
-            height: 100vh;
+            background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
+        }
+
+        /* Style for the container */
+        .container {
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 80%;
         }
 
         /* Style for the image */
         .centered-image {
-            max-width: 50%; /* Limiting image width */
-            height: auto;
-            margin: 0 auto; /* Additional centering for image */
-            box-shadow: 0 4px 8px rgba(255,255,255,0.1); /* subtle white shadow */
-            border-radius: 8px; /* rounded corners */
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         }
 
         /* Container for buttons */
@@ -42,31 +42,31 @@
         /* Common button styling */
         .button {
             text-decoration: none;
-            padding: 10px 20px;
-            margin: 5px;
-            background-color: #007bff;
+            padding: 12px 24px;
+            margin: 10px;
+            background: #4CAF50;
             color: white;
             border-radius: 5px;
             border: none;
             cursor: pointer;
-            transition: background-color 0.3s ease; /* Smooth transition */
-            box-shadow: 0 2px 5px rgba(255,255,255,0.15);
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         /* Button hover effect */
         .button:hover {
-            background-color: #0056b3;
+            background: #45a049;
         }
 
-        /* Responsive Design: Adjusts layout for smaller screens */
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .centered-image {
+            .container {
                 max-width: 90%;
             }
 
             .button {
-                padding: 8px 16px; /* Slightly smaller padding */
-                font-size: 0.9em; /* Smaller font size */
+                padding: 10px 20px;
+                font-size: 0.9em;
             }
         }
     </style>
